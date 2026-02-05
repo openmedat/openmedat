@@ -1,26 +1,27 @@
 const memoryContent = {
     text: `
-        <h3 style="color: #2563eb; margin-bottom: 1rem;">Patienteninformation</h3>
+        <h3 style="color: #60a5fa; margin-bottom: 1rem;">Beispielinhalt zum Merken</h3>
         <div style="line-height: 1.8; font-size: 1.1rem;">
-            <p><strong>Name:</strong> Dr. Anna Müller</p>
-            <p><strong>Geburtsdatum:</strong> 15. März 1985</p>
-            <p><strong>Fachgebiet:</strong> Kardiologie</p>
-            <p><strong>Krankenhaus:</strong> Universitätsklinik Wien</p>
-            <p><strong>Telefon:</strong> +43 1 234 5678</p>
-            <p><strong>Sprechzeiten:</strong> Montag bis Freitag, 9:00 - 17:00 Uhr</p>
+            <p><strong>Kategorie:</strong> Städte und Zahlen</p>
+            <p><strong>Stadt 1:</strong> Wien - 1897</p>
+            <p><strong>Stadt 2:</strong> Berlin - 1652</p>
+            <p><strong>Stadt 3:</strong> Paris - 1243</p>
+            <p><strong>Stadt 4:</strong> London - 1586</p>
+            <p><strong>Stadt 5:</strong> Rom - 1974</p>
             <br>
-            <p><strong>Behandlungsschwerpunkte:</strong></p>
+            <p><strong>Farben:</strong></p>
             <ul style="margin-left: 2rem;">
-                <li>Herzrhythmusstörungen</li>
-                <li>Koronare Herzkrankheit</li>
-                <li>Herzinsuffizienz</li>
-                <li>Präventive Kardiologie</li>
+                <li>Wien: Blau</li>
+                <li>Berlin: Grün</li>
+                <li>Paris: Rot</li>
+                <li>London: Gelb</li>
+                <li>Rom: Orange</li>
             </ul>
             <br>
-            <p><strong>Ausbildung:</strong> Medizinstudium an der Medizinischen Universität Wien (2003-2009), 
-            Facharztausbildung Innere Medizin und Kardiologie (2010-2016)</p>
+            <p><strong>Symbole:</strong> Wien (★), Berlin (●), Paris (■), London (▲), Rom (◆)</p>
             <br>
-            <p><strong>Zusatzqualifikationen:</strong> Notarzt, Intensivmedizin, Echokardiographie</p>
+            <p><strong>Hinweis:</strong> Dies ist ein Beispiel für die Gedächtnis- und Merkfähigkeitsaufgaben. 
+            Im echten MEDAT werden Informationen zu merken sein, die später abgefragt werden.</p>
         </div>
     `
 };
@@ -28,38 +29,38 @@ const memoryContent = {
 const questions = [
     {
         id: 1,
-        question: "Wie lautet der Nachname der Ärztin?",
-        options: ["Meyer", "Müller", "Schmidt", "Wagner"],
+        question: "Welche Zahl ist Wien zugeordnet?",
+        options: ["1652", "1897", "1243", "1586"],
         correct: 1
     },
     {
         id: 2,
-        question: "In welchem Fachgebiet ist Dr. Müller tätig?",
-        options: ["Neurologie", "Orthopädie", "Kardiologie", "Dermatologie"],
+        question: "Welche Farbe hat Berlin?",
+        options: ["Blau", "Rot", "Grün", "Gelb"],
         correct: 2
     },
     {
         id: 3,
-        question: "In welchem Jahr hat Dr. Müller ihr Medizinstudium begonnen?",
-        options: ["2001", "2003", "2005", "2007"],
-        correct: 1
+        question: "Welches Symbol gehört zu Paris?",
+        options: ["★", "●", "■", "▲"],
+        correct: 2
     },
     {
         id: 4,
-        question: "An welcher Klinik arbeitet Dr. Müller?",
-        options: ["AKH Wien", "Universitätsklinik Wien", "Krankenhaus Nord", "Klinik Favoriten"],
-        correct: 1
+        question: "Welche Stadt hat die Zahl 1586?",
+        options: ["Wien", "Berlin", "Paris", "London"],
+        correct: 3
     },
     {
         id: 5,
-        question: "Welcher Behandlungsschwerpunkt wird NICHT genannt?",
-        options: ["Herzrhythmusstörungen", "Herzklappenfehler", "Herzinsuffizienz", "Koronare Herzkrankheit"],
+        question: "Welche Farbe hat Rom?",
+        options: ["Gelb", "Orange", "Blau", "Rot"],
         correct: 1
     },
     {
         id: 6,
-        question: "Bis wann dauern die Sprechzeiten an Werktagen?",
-        options: ["16:00 Uhr", "17:00 Uhr", "18:00 Uhr", "19:00 Uhr"],
+        question: "Welche Stadt hat das Symbol ●?",
+        options: ["Wien", "Berlin", "Paris", "Rom"],
         correct: 1
     }
 ];
@@ -84,7 +85,7 @@ document.getElementById('start-btn').addEventListener('click', () => {
         
         if (timeLeft <= 0) {
             clearInterval(timerInterval);
-            document.getElementById('memory-content').innerHTML = '<p style="text-align: center; font-size: 1.2rem; color: #6b7280;">Die Lernzeit ist abgelaufen. Klicke auf "Weiter", um mit den Fragen zu beginnen.</p>';
+            document.getElementById('memory-content').innerHTML = '<p style="text-align: center; font-size: 1.2rem; color: #94a3b8;">Die Lernzeit ist abgelaufen. Klicke auf "Weiter", um mit den Fragen zu beginnen.</p>';
             document.getElementById('timer').style.display = 'none';
             document.getElementById('continue-btn').style.display = 'inline-block';
         }
@@ -179,7 +180,7 @@ function showResults() {
             <h2>Ergebnis</h2>
             <div class="score">${score} / ${questions.length}</div>
             <p style="font-size: 1.3rem;">${percentage}% richtig</p>
-            <button class="btn btn-primary" onclick="location.reload()" style="margin-top: 1.5rem; background: white; color: #10b981;">
+            <button class="btn btn-primary" onclick="location.reload()" style="margin-top: 1.5rem; background: #3b82f6; color: #ffffff;">
                 Nochmal üben
             </button>
             <a href="index.html" class="btn btn-secondary" style="margin-top: 1rem; display: inline-block; text-decoration: none;">

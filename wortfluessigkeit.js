@@ -2,61 +2,61 @@ const questions = [
     {
         id: 1,
         question: "Welches Wort passt NICHT zu den anderen?",
-        words: ["Herz", "Lunge", "Leber", "Tisch"],
-        options: ["Herz", "Lunge", "Leber", "Tisch"],
+        words: ["Löffel", "Gabel", "Messer", "Teller"],
+        options: ["Löffel", "Gabel", "Messer", "Teller"],
         correct: 3,
-        explanation: "Herz, Lunge und Leber sind Organe - Tisch ist ein Möbelstück"
+        explanation: "Löffel, Gabel und Messer sind Besteck - Teller ist Geschirr"
     },
     {
         id: 2,
-        question: "Welches Wort passt am besten zu: Arzt - Patient?",
-        options: ["Lehrer - Schüler", "Buch - Seite", "Auto - Straße", "Haus - Dach"],
+        question: "Welches Wort passt am besten zu: Lehrer - Schüler?",
+        options: ["Trainer - Sportler", "Buch - Seite", "Auto - Straße", "Haus - Dach"],
         correct: 0,
-        explanation: "Beide Paare beschreiben eine Betreuungs-/Lehrbeziehung"
+        explanation: "Beide Paare beschreiben eine Lehr-/Trainingsbeziehung"
     },
     {
         id: 3,
-        question: "Welches Wort ist das Gegenteil von 'akut'?",
-        options: ["chronisch", "schnell", "schmerzhaft", "heilbar"],
+        question: "Welches Wort ist das Gegenteil von 'schnell'?",
+        options: ["langsam", "klein", "groß", "hell"],
         correct: 0,
-        explanation: "Akut bedeutet plötzlich auftretend, chronisch bedeutet langanhaltend"
+        explanation: "Schnell und langsam sind Antonyme (Gegensätze)"
     },
     {
         id: 4,
         question: "Welches Wort passt NICHT in die Gruppe?",
-        words: ["Diagnose", "Therapie", "Prognose", "Fernseher"],
-        options: ["Diagnose", "Therapie", "Prognose", "Fernseher"],
+        words: ["Stuhl", "Tisch", "Sofa", "Apfel"],
+        options: ["Stuhl", "Tisch", "Sofa", "Apfel"],
         correct: 3,
-        explanation: "Diagnose, Therapie und Prognose sind medizinische Fachbegriffe"
+        explanation: "Stuhl, Tisch und Sofa sind Möbelstücke - Apfel ist eine Frucht"
     },
     {
         id: 5,
-        question: "Vervollständige die Analogie: Skalpell : Chirurg = Stethoskop : ?",
-        options: ["Apotheker", "Internist", "Zahnarzt", "Physiotherapeut"],
+        question: "Vervollständige die Analogie: Buch : Lesen = Musik : ?",
+        options: ["Sehen", "Hören", "Schmecken", "Riechen"],
         correct: 1,
-        explanation: "Ein Stethoskop wird hauptsächlich von Internisten verwendet, wie ein Skalpell von Chirurgen"
+        explanation: "Ein Buch wird gelesen, Musik wird gehört"
     },
     {
         id: 6,
-        question: "Welches Wort ist ein Synonym für 'Anamnese'?",
-        options: ["Krankengeschichte", "Untersuchung", "Behandlung", "Heilung"],
+        question: "Welches Wort ist ein Synonym für 'groß'?",
+        options: ["riesig", "klein", "mittel", "eng"],
         correct: 0,
-        explanation: "Anamnese bedeutet die Erhebung der Krankengeschichte"
+        explanation: "Groß und riesig haben eine ähnliche Bedeutung"
     },
     {
         id: 7,
         question: "Welches Wort gehört NICHT zur Gruppe?",
-        words: ["Fieber", "Husten", "Schmerz", "Glück"],
-        options: ["Fieber", "Husten", "Schmerz", "Glück"],
+        words: ["Rot", "Blau", "Grün", "Kreis"],
+        options: ["Rot", "Blau", "Grün", "Kreis"],
         correct: 3,
-        explanation: "Fieber, Husten und Schmerz sind Symptome - Glück ist ein Gefühl"
+        explanation: "Rot, Blau und Grün sind Farben - Kreis ist eine Form"
     },
     {
         id: 8,
-        question: "Welches Wort vervollständigt die Reihe: Präventiv - Diagnostisch - Therapeutisch - ?",
-        options: ["Kurativ", "Palliativ", "Rehabilitativ", "Alle sind richtig"],
-        correct: 3,
-        explanation: "Alle genannten Begriffe sind verschiedene Phasen der medizinischen Versorgung"
+        question: "Welches Wort vervollständigt die Reihe: Winter - Frühling - Sommer - ?",
+        options: ["Herbst", "Januar", "Kalt", "Jahr"],
+        correct: 0,
+        explanation: "Die Jahreszeiten in ihrer natürlichen Reihenfolge"
     }
 ];
 
@@ -79,7 +79,7 @@ function displayQuestion() {
         questionHTML += `
             <div style="display: flex; gap: 1rem; justify-content: center; margin: 1.5rem 0; flex-wrap: wrap;">
                 ${question.words.map(word => `
-                    <div style="padding: 1rem 1.5rem; background: #f3f4f6; border-radius: 8px; font-weight: 600;">
+                    <div style="padding: 1rem 1.5rem; background: #1e293b; border: 1px solid #334155; border-radius: 8px; font-weight: 600;">
                         ${word}
                     </div>
                 `).join('')}
@@ -95,7 +95,7 @@ function displayQuestion() {
                     </div>
                 `).join('')}
             </div>
-            <div id="explanation" style="margin-top: 1.5rem; padding: 1rem; background: #eff6ff; border-radius: 8px; display: none;">
+            <div id="explanation" style="margin-top: 1.5rem; padding: 1rem; background: #1e3a8a; border: 1px solid #3b82f6; border-radius: 8px; display: none; color: #e5e7eb;">
                 <strong>Erklärung:</strong> <span id="explanation-text"></span>
             </div>
         </div>
@@ -171,7 +171,7 @@ function showResults() {
             <h2>Ergebnis</h2>
             <div class="score">${score} / ${questions.length}</div>
             <p style="font-size: 1.3rem;">${percentage}% richtig</p>
-            <button class="btn btn-primary" onclick="location.reload()" style="margin-top: 1.5rem; background: white; color: #10b981;">
+            <button class="btn btn-primary" onclick="location.reload()" style="margin-top: 1.5rem; background: #3b82f6; color: #ffffff;">
                 Nochmal üben
             </button>
             <a href="index.html" class="btn btn-secondary" style="margin-top: 1rem; display: inline-block; text-decoration: none;">

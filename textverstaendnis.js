@@ -1,89 +1,67 @@
 const textContent = `
-Die Genetik spielt eine zentrale Rolle in der modernen Medizin. Die DNA, 
-die Desoxyribonukleinsäure, ist der Träger der Erbinformation in allen lebenden 
-Organismen. Sie besteht aus vier Basen: Adenin (A), Thymin (T), Guanin (G) und 
-Cytosin (C). Diese Basen paaren sich nach einem festen Schema: Adenin mit Thymin 
-und Guanin mit Cytosin.
+Der folgende Text dient als Beispiel für Textverständnisaufgaben. In der echten MEDAT-Prüfung 
+werden Texte zu verschiedenen wissenschaftlichen und allgemeinen Themen gestellt.
 
-Die Entdeckung der DNA-Struktur durch Watson und Crick im Jahr 1953 revolutionierte 
-die Biologie und Medizin. Heute ermöglicht die Gentechnik nicht nur die Diagnose 
-erblicher Krankheiten, sondern auch deren potenzielle Behandlung durch Gentherapie. 
-Ein wichtiges Beispiel ist die Sichelzellenanämie, eine Erbkrankheit, die durch eine 
-Mutation im Gen für Hämoglobin verursacht wird.
+Die Texte können unterschiedliche Längen und Schwierigkeitsgrade aufweisen. Wichtig ist es, 
+die Kernaussagen zu erfassen und die Zusammenhänge im Text zu verstehen. Neben dem reinen 
+Textverständnis wird auch die Fähigkeit geprüft, Implikationen zu erkennen und Schlussfolgerungen 
+aus dem Gelesenen zu ziehen.
 
-In der personalisierten Medizin werden genetische Informationen genutzt, um Behandlungen 
-individuell anzupassen. Pharmakogenetik untersucht, wie genetische Variationen die 
-Wirkung von Medikamenten beeinflussen. Dies kann erklären, warum manche Patienten 
-auf bestimmte Medikamente gut ansprechen, während andere Nebenwirkungen erleiden.
-
-Die ethischen Fragen rund um die Gentechnik sind komplex. Während die Möglichkeit, 
-Krankheiten zu heilen, verlockend ist, gibt es Bedenken bezüglich des Datenschutzes 
-und der möglichen Diskriminierung aufgrund genetischer Informationen. Die Gesellschaft 
-muss einen verantwortungsvollen Umgang mit diesen neuen Technologien finden.
+Bei der Bearbeitung sollte systematisch vorgegangen werden: Zunächst den Text aufmerksam lesen, 
+dann die Fragen studieren und schließlich die relevanten Textstellen nochmals genau durchgehen. 
+Zeitmanagement spielt eine wichtige Rolle, da mehrere Texte in begrenzter Zeit bearbeitet werden müssen.
 `;
 
 const questions = [
     {
         id: 1,
-        question: "In welchem Jahr wurde die DNA-Struktur von Watson und Crick entdeckt?",
-        options: ["1943", "1953", "1963", "1973"],
-        correct: 1,
-        explanation: "Die DNA-Struktur wurde 1953 entdeckt, wie im Text erwähnt"
+        question: "Welche Fähigkeit wird NICHT im Text erwähnt?",
+        options: ["Kernaussagen erfassen", "Zusammenhänge verstehen", "Mathematische Berechnungen", "Implikationen erkennen"],
+        correct: 2,
+        explanation: "Mathematische Berechnungen werden im Text nicht erwähnt"
     },
     {
         id: 2,
-        question: "Welche Base paart sich mit Adenin?",
-        options: ["Guanin", "Cytosin", "Thymin", "Uracil"],
-        correct: 2,
-        explanation: "Laut Text paart sich Adenin mit Thymin"
+        question: "Was wird im Text als wichtig für die Bearbeitung genannt?",
+        options: ["Schnelles Lesen", "Systematisches Vorgehen", "Auswendiglernen", "Raten"],
+        correct: 1,
+        explanation: "Der Text betont die Wichtigkeit eines systematischen Vorgehens"
     },
     {
         id: 3,
-        question: "Was ist Sichelzellenanämie?",
+        question: "Welche Rolle spielt Zeitmanagement laut Text?",
         options: [
-            "Eine virale Infektion",
-            "Eine Erbkrankheit durch Hämoglobin-Mutation",
-            "Eine bakterielle Erkrankung",
-            "Eine Autoimmunerkrankung"
+            "Keine Rolle",
+            "Eine unwichtige Rolle",
+            "Eine wichtige Rolle",
+            "Die einzige wichtige Rolle"
         ],
-        correct: 1,
-        explanation: "Der Text beschreibt Sichelzellenanämie als Erbkrankheit durch Mutation im Hämoglobin-Gen"
+        correct: 2,
+        explanation: "Der Text sagt explizit, dass Zeitmanagement eine wichtige Rolle spielt"
     },
     {
         id: 4,
-        question: "Was untersucht die Pharmakogenetik?",
+        question: "Was sollte nach dem ersten Lesen erfolgen?",
         options: [
-            "Die Herstellung von Medikamenten",
-            "Die Entwicklung neuer Therapien",
-            "Wie Gene die Medikamentenwirkung beeinflussen",
-            "Die Geschichte der Pharmazie"
+            "Den Text nochmals komplett lesen",
+            "Die Fragen studieren",
+            "Sofort antworten",
+            "Eine Pause machen"
         ],
-        correct: 2,
-        explanation: "Pharmakogenetik untersucht laut Text, wie genetische Variationen die Medikamentenwirkung beeinflussen"
+        correct: 1,
+        explanation: "Laut Text sollten nach dem Lesen die Fragen studiert werden"
     },
     {
         id: 5,
-        question: "Welche ethische Sorge wird im Text erwähnt?",
+        question: "Welche Eigenschaft der Texte wird erwähnt?",
         options: [
-            "Kosten der Behandlung",
-            "Datenschutz und genetische Diskriminierung",
-            "Verfügbarkeit von Medikamenten",
-            "Ausbildung von Ärzten"
+            "Alle Texte sind gleich lang",
+            "Unterschiedliche Längen und Schwierigkeitsgrade",
+            "Nur wissenschaftliche Themen",
+            "Immer dieselben Themen"
         ],
         correct: 1,
-        explanation: "Der Text nennt Bedenken bezüglich Datenschutz und möglicher Diskriminierung"
-    },
-    {
-        id: 6,
-        question: "Wofür steht 'DNA'?",
-        options: [
-            "Deoxyribose Nucleic Acid",
-            "Desoxyribonukleinsäure",
-            "Dynamic Nuclear Analysis",
-            "Digital Network Access"
-        ],
-        correct: 1,
-        explanation: "Im Text wird DNA als Desoxyribonukleinsäure bezeichnet"
+        explanation: "Der Text erwähnt explizit unterschiedliche Längen und Schwierigkeitsgrade"
     }
 ];
 
@@ -109,7 +87,7 @@ function displayQuestion() {
                     </div>
                 `).join('')}
             </div>
-            <div id="explanation" style="margin-top: 1.5rem; padding: 1rem; background: #eff6ff; border-radius: 8px; display: none;">
+            <div id="explanation" style="margin-top: 1.5rem; padding: 1rem; background: #1e3a8a; border: 1px solid #3b82f6; border-radius: 8px; display: none; color: #e5e7eb;">
                 <strong>Erklärung:</strong> <span id="explanation-text"></span>
             </div>
         </div>
@@ -183,7 +161,7 @@ function showResults() {
             <h2>Ergebnis</h2>
             <div class="score">${score} / ${questions.length}</div>
             <p style="font-size: 1.3rem;">${percentage}% richtig</p>
-            <button class="btn btn-primary" onclick="location.reload()" style="margin-top: 1.5rem; background: white; color: #10b981;">
+            <button class="btn btn-primary" onclick="location.reload()" style="margin-top: 1.5rem; background: #3b82f6; color: #ffffff;">
                 Nochmal üben
             </button>
             <a href="index.html" class="btn btn-secondary" style="margin-top: 1rem; display: inline-block; text-decoration: none;">

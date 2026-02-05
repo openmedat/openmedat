@@ -76,7 +76,7 @@ function displayQuestion() {
                     </div>
                 `).join('')}
             </div>
-            <div id="explanation" style="margin-top: 1.5rem; padding: 1rem; background: #eff6ff; border-radius: 8px; display: none;">
+            <div id="explanation" style="margin-top: 1.5rem; padding: 1rem; background: #1e3a8a; border: 1px solid #3b82f6; border-radius: 8px; display: none; color: #e5e7eb;">
                 <strong>Erklärung:</strong> <span id="explanation-text"></span>
             </div>
         </div>
@@ -150,7 +150,7 @@ function showResults() {
             <h2>Ergebnis</h2>
             <div class="score">${score} / ${questions.length}</div>
             <p style="font-size: 1.3rem;">${percentage}% richtig</p>
-            <button class="btn btn-primary" onclick="location.reload()" style="margin-top: 1.5rem; background: white; color: #10b981;">
+            <button class="btn btn-primary" onclick="location.reload()" style="margin-top: 1.5rem; background: #3b82f6; color: #ffffff;">
                 Nochmal üben
             </button>
             <a href="index.html" class="btn btn-secondary" style="margin-top: 1rem; display: inline-block; text-decoration: none;">

@@ -1,107 +1,107 @@
 const questions = [
     {
         id: 1,
-        premise: "Alle Ärzte haben ein Medizinstudium abgeschlossen. Maria ist Ärztin.",
+        premise: "Alle Studenten haben eine Matrikelnummer. Max ist Student.",
         question: "Was folgt daraus?",
         options: [
-            "Maria hat ein Medizinstudium abgeschlossen",
-            "Maria arbeitet im Krankenhaus",
-            "Maria ist Chirurgin",
-            "Maria mag ihren Beruf"
+            "Max hat eine Matrikelnummer",
+            "Max studiert Medizin",
+            "Max ist fleißig",
+            "Max geht zur Universität"
         ],
         correct: 0,
-        explanation: "Aus 'Alle Ärzte haben ein Medizinstudium' und 'Maria ist Ärztin' folgt logisch, dass Maria ein Medizinstudium hat"
+        explanation: "Aus 'Alle Studenten haben eine Matrikelnummer' und 'Max ist Student' folgt logisch, dass Max eine Matrikelnummer hat"
     },
     {
         id: 2,
-        premise: "Wenn jemand Fieber hat, dann ist er krank. Peter ist krank.",
+        premise: "Wenn es regnet, ist die Straße nass. Die Straße ist nass.",
         question: "Was können wir daraus schließen?",
         options: [
-            "Peter hat Fieber",
-            "Peter hat definitiv kein Fieber",
-            "Peter könnte Fieber haben, muss aber nicht",
-            "Peter geht zum Arzt"
+            "Es regnet definitiv",
+            "Es hat definitiv nicht geregnet",
+            "Es könnte geregnet haben, muss aber nicht",
+            "Die Straße ist trocken"
         ],
         correct: 2,
-        explanation: "Aus 'krank sein' folgt nicht zwingend 'Fieber haben'. Man kann auch ohne Fieber krank sein"
+        explanation: "Aus 'nasse Straße' folgt nicht zwingend 'Regen'. Die Straße kann auch auf andere Weise nass geworden sein"
     },
     {
         id: 3,
-        premise: "Alle Chirurgen sind Ärzte. Kein Zahnarzt ist Chirurg.",
+        premise: "Alle Katzen sind Tiere. Kein Hund ist eine Katze.",
         question: "Was folgt daraus?",
         options: [
-            "Kein Zahnarzt ist Arzt",
-            "Alle Ärzte sind Chirurgen",
-            "Einige Zahnärzte sind keine Ärzte",
+            "Kein Hund ist ein Tier",
+            "Alle Tiere sind Katzen",
+            "Einige Hunde sind keine Tiere",
             "Keine dieser Aussagen folgt zwingend"
         ],
         correct: 3,
-        explanation: "Zahnärzte können durchaus Ärzte sein, auch wenn sie keine Chirurgen sind. Die Aussagen lassen dies offen"
+        explanation: "Hunde können durchaus Tiere sein, auch wenn sie keine Katzen sind. Die Aussagen lassen dies offen"
     },
     {
         id: 4,
-        premise: "Wenn eine Behandlung wirksam ist, wird der Patient gesund. Der Patient wurde gesund.",
+        premise: "Wenn ein Test schwierig ist, braucht man viel Zeit. Man braucht viel Zeit.",
         question: "Was können wir schlussfolgern?",
         options: [
-            "Die Behandlung war definitiv wirksam",
-            "Die Behandlung könnte wirksam gewesen sein",
-            "Die Behandlung war nicht wirksam",
-            "Der Patient hatte keine Behandlung"
+            "Der Test ist definitiv schwierig",
+            "Der Test könnte schwierig sein",
+            "Der Test ist nicht schwierig",
+            "Man braucht keine Zeit"
         ],
         correct: 1,
-        explanation: "Der Patient könnte auch ohne Behandlung oder durch andere Faktoren gesund geworden sein"
+        explanation: "Man könnte auch aus anderen Gründen viel Zeit brauchen, nicht nur wegen eines schwierigen Tests"
     },
     {
         id: 5,
-        premise: "Alle Notfallpatienten werden sofort behandelt. Anna wurde sofort behandelt.",
+        premise: "Alle Teilnehmer bekommen eine Urkunde. Anna hat eine Urkunde bekommen.",
         question: "Was folgt daraus?",
         options: [
-            "Anna ist ein Notfallpatient",
-            "Anna könnte ein Notfallpatient sein",
-            "Anna ist kein Notfallpatient",
-            "Anna hat lange gewartet"
+            "Anna ist Teilnehmerin",
+            "Anna könnte Teilnehmerin sein",
+            "Anna ist keine Teilnehmerin",
+            "Anna hat gewonnen"
         ],
         correct: 1,
-        explanation: "Auch nicht-Notfallpatienten können sofort behandelt werden. Die Aussage 'könnte sein' ist am zutreffendsten"
+        explanation: "Auch Nicht-Teilnehmer könnten eine Urkunde bekommen. Die Aussage 'könnte sein' ist am zutreffendsten"
     },
     {
         id: 6,
-        premise: "Keine antibakterielle Behandlung hilft gegen Viren. Diese Krankheit wird durch Viren verursacht.",
+        premise: "Keine Zimmerpflanze wächst ohne Licht. Diese Pflanze bekommt kein Licht.",
         question: "Was können wir schließen?",
         options: [
-            "Antibiotika helfen bei dieser Krankheit",
-            "Antibiotika helfen nicht bei dieser Krankheit",
-            "Die Krankheit ist unheilbar",
-            "Die Krankheit ist harmlos"
+            "Die Pflanze wächst gut",
+            "Die Pflanze wächst nicht",
+            "Die Pflanze ist eine Outdoor-Pflanze",
+            "Die Pflanze braucht kein Licht"
         ],
         correct: 1,
-        explanation: "Da die Krankheit durch Viren verursacht wird und antibakterielle Mittel nicht gegen Viren helfen, sind Antibiotika nicht wirksam"
+        explanation: "Da keine Zimmerpflanze ohne Licht wächst und diese Pflanze kein Licht bekommt, kann sie nicht wachsen"
     },
     {
         id: 7,
-        premise: "Alle erfolgreichen Operationen erfordern präzise Planung. Diese Operation war erfolgreich.",
+        premise: "Alle erfolgreichen Projekte erfordern gute Planung. Dieses Projekt war erfolgreich.",
         question: "Was folgt daraus zwingend?",
         options: [
-            "Die Operation war gut geplant",
-            "Der Chirurg war erfahren",
-            "Es gab keine Komplikationen",
-            "Die Operation dauerte lange"
+            "Das Projekt war gut geplant",
+            "Das Team war groß",
+            "Es gab keine Probleme",
+            "Das Projekt dauerte lange"
         ],
         correct: 0,
-        explanation: "Aus 'Alle erfolgreichen OPs erfordern Planung' und 'Diese OP war erfolgreich' folgt: Sie war präzise geplant"
+        explanation: "Aus 'Alle erfolgreichen Projekte erfordern Planung' und 'Dieses Projekt war erfolgreich' folgt: Es war gut geplant"
     },
     {
         id: 8,
-        premise: "Wenn ein Medikament Nebenwirkungen hat, sollte der Arzt informiert werden. Dieses Medikament hat Nebenwirkungen.",
+        premise: "Wenn ein Buch interessant ist, wird es oft gelesen. Dieses Buch ist interessant.",
         question: "Was sollte geschehen?",
         options: [
-            "Das Medikament sollte abgesetzt werden",
-            "Der Arzt sollte informiert werden",
-            "Die Dosis sollte erhöht werden",
-            "Nichts, Nebenwirkungen sind normal"
+            "Das Buch sollte verliehen werden",
+            "Das Buch wird oft gelesen",
+            "Das Buch sollte neu aufgelegt werden",
+            "Das Buch ist teuer"
         ],
         correct: 1,
-        explanation: "Die Prämisse besagt eindeutig: Wenn Nebenwirkungen auftreten, sollte der Arzt informiert werden"
+        explanation: "Die Prämisse besagt eindeutig: Wenn ein Buch interessant ist, wird es oft gelesen"
     }
 ];
 
@@ -117,8 +117,8 @@ function displayQuestion() {
         <div class="question-card">
             <div class="question-number">Frage ${currentQuestion + 1} von ${questions.length}</div>
             
-            <div style="background: #f3f4f6; padding: 1.5rem; border-radius: 8px; margin-bottom: 1.5rem; border-left: 4px solid #2563eb;">
-                <strong style="color: #2563eb;">Prämisse:</strong>
+            <div style="background: #1e3a8a; padding: 1.5rem; border-radius: 8px; margin-bottom: 1.5rem; border-left: 4px solid #3b82f6;">
+                <strong style="color: #60a5fa;">Prämisse:</strong>
                 <p style="margin-top: 0.5rem; line-height: 1.6;">${question.premise}</p>
             </div>
 
@@ -131,7 +131,7 @@ function displayQuestion() {
                     </div>
                 `).join('')}
             </div>
-            <div id="explanation" style="margin-top: 1.5rem; padding: 1rem; background: #eff6ff; border-radius: 8px; display: none;">
+            <div id="explanation" style="margin-top: 1.5rem; padding: 1rem; background: #1e3a8a; border: 1px solid #3b82f6; border-radius: 8px; display: none; color: #e5e7eb;">
                 <strong>Erklärung:</strong> <span id="explanation-text"></span>
             </div>
         </div>
@@ -205,7 +205,7 @@ function showResults() {
             <h2>Ergebnis</h2>
             <div class="score">${score} / ${questions.length}</div>
             <p style="font-size: 1.3rem;">${percentage}% richtig</p>
-            <button class="btn btn-primary" onclick="location.reload()" style="margin-top: 1.5rem; background: white; color: #10b981;">
+            <button class="btn btn-primary" onclick="location.reload()" style="margin-top: 1.5rem; background: #3b82f6; color: #ffffff;">
                 Nochmal üben
             </button>
             <a href="index.html" class="btn btn-secondary" style="margin-top: 1rem; display: inline-block; text-decoration: none;">

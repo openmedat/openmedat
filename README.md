@@ -5,30 +5,39 @@ Eine kostenlose, open-source Plattform zur Vorbereitung auf den Medizinischen Au
 ## 🎯 Features
 
 - **100% Kostenlos** - Alle Übungen sind komplett kostenlos verfügbar
+- **Strukturiert nach offiziellen MEDAT-Kategorien**
 - **Interaktive Übungen** - Sofortiges Feedback zu deinen Antworten
-- **Verschiedene Kategorien** - Alle wichtigen MEDAT-Testbereiche abgedeckt
 - **Responsive Design** - Funktioniert auf Desktop, Tablet und Smartphone
-- **Fortschrittstracking** - Verfolge deine Leistung in jeder Kategorie
 
-## 📚 Verfügbare Übungskategorien
+## 📚 MEDAT Testbereiche
 
-### 1. Zahlenfolgen
-Trainiere dein logisches Denken mit Zahlenreihen und Sequenzen. Erkenne Muster und setze Zahlenfolgen fort.
+### 1. Basiskenntnistest Medizinische Studien (BMS)
+Standardisierter Kenntnistest im Multiple-Choice-Format zur Erfassung des schulischen Vorwissens über medizinrelevante Grundlagenfächer.
 
-### 2. Figuren zusammensetzen
-Verbessere dein räumliches Vorstellungsvermögen. Erkenne, welche Teile zusammen die Zielfigur ergeben.
+- **Biologie** (in Entwicklung)
+- **Chemie** (in Entwicklung)
+- **Physik** (in Entwicklung)
+- **Mathematik** (in Entwicklung)
 
-### 3. Gedächtnis & Merkfähigkeit
-Trainiere deine Merkfähigkeit für Fakten und Details. Merke dir Informationen und beantworte Fragen dazu.
+### 2. Textverständnis (TV)
+Multiple-Choice-Format zur Überprüfung der Lesekompetenz und des Textverständnisses.
+- ✅ Übungen verfügbar
 
-### 4. Wortflüssigkeit
-Übe Wortassoziationen und Sprachverständnis. Finde passende Wörter und erkenne Zusammenhänge.
+### 3. Kognitive Fähigkeiten und Fertigkeiten (KFF)
+Kognitive Basisfähigkeiten mit hoher prädiktiver Validität für den erfolgreichen Studienabschluss.
 
-### 5. Textverständnis
-Verbessere dein Leseverständnis und analytisches Denken. Lies Texte und beantworte Fragen zum Inhalt.
+- ✅ **Figuren zusammensetzen (FZ)** - Visuoanalytische und visuokonstruktive Leistungen
+- ✅ **Gedächtnis & Merkfähigkeit (GM)** - Inhalte einprägen und flexibel abrufen
+- ✅ **Zahlenfolgen (ZF)** - Gesetzmäßigkeiten erkennen und logische Schlüsse ziehen
+- ✅ **Wortflüssigkeit (WF)** - Flexibler Abruf aus dem semantischen Gedächtnis
+- ✅ **Implikationen erkennen (IMP)** - Logisch zwingende Schlussfolgerungen ziehen
 
-### 6. Implikationen erkennen
-Trainiere logisches Schließen und Schlussfolgerungen. Erkenne logische Zusammenhänge aus gegebenen Prämissen.
+### 4. Sozial-emotionale Kompetenzen (SEK)
+Aufgabengruppen zur Erfassung wesentlicher Aspekte sozial-emotionaler Kompetenzen.
+
+- **Emotionen erkennen (EE)** (in Entwicklung)
+- **Emotionen regulieren (ER)** (in Entwicklung)
+- **Soziales Entscheiden (SE)** (in Entwicklung)
 
 ## 🚀 Installation & Nutzung
 
@@ -113,7 +122,14 @@ Dieses Projekt ist open source und frei verfügbar.
 
 ## 🎓 Über den MEDAT
 
-Der MEDAT (Medizinischer Aufnahmetest) ist der Aufnahmetest für Medizin-Studiengänge in Österreich. Er besteht aus verschiedenen Testteilen, die kognitive Fähigkeiten, Wissen und Verständnis prüfen.
+Der MEDAT (Medizinischer Aufnahmetest) ist der Aufnahmetest für Medizin-Studiengänge in Österreich. Er besteht aus vier Hauptbereichen:
+
+1. **BMS** - Basiskenntnistest Medizinische Studien (40% der Gesamtpunkte)
+2. **TV** - Textverständnis (10% der Gesamtpunkte)
+3. **KFF** - Kognitive Fähigkeiten und Fertigkeiten (40% der Gesamtpunkte)
+4. **SEK** - Sozial-emotionale Kompetenzen (10% der Gesamtpunkte)
+
+Die Plattform wird kontinuierlich erweitert, um alle Testbereiche abzudecken.
 
 ## 📧 Kontakt
 

@@ -1,7 +1,7 @@
 const questions = [
     {
         id: 1,
-        description: "Welche Teile ergeben das Quadrat?",
+        description: "Welche Teile ergeben zusammengesetzt die Zielfigur?",
         target: "Ein vollständiges Quadrat",
         pieces: [
             { id: 'A', shape: '◤' },
@@ -21,7 +21,7 @@ const questions = [
     },
     {
         id: 2,
-        description: "Welche Teile bilden ein Rechteck?",
+        description: "Welche Teile bilden die Zielfigur?",
         target: "Ein Rechteck (doppelt so breit wie hoch)",
         pieces: [
             { id: 'A', shape: '▭' },
@@ -41,7 +41,7 @@ const questions = [
     },
     {
         id: 3,
-        description: "Welche Teile bilden einen Kreis?",
+        description: "Welche Teile bilden die Zielfigur?",
         target: "Ein vollständiger Kreis",
         pieces: [
             { id: 'A', shape: '◔' },
@@ -61,7 +61,7 @@ const questions = [
     },
     {
         id: 4,
-        description: "Welche Teile bilden ein Dreieck?",
+        description: "Welche Teile setzen die Zielfigur zusammen?",
         target: "Ein gleichseitiges Dreieck",
         pieces: [
             { id: 'A', shape: '▲' },
@@ -81,7 +81,7 @@ const questions = [
     },
     {
         id: 5,
-        description: "Welche drei Teile bilden ein Sechseck?",
+        description: "Welche drei Teile bilden die Zielfigur?",
         target: "Ein regelmäßiges Sechseck",
         pieces: [
             { id: 'A', shape: '⬢' },
@@ -114,7 +114,7 @@ function displayQuestion() {
             <div class="question-number">Frage ${currentQuestion + 1} von ${questions.length}</div>
             <div class="question-text">${question.description}</div>
             
-            <div style="background: #f3f4f6; padding: 2rem; border-radius: 8px; margin: 1.5rem 0; text-align: center;">
+            <div style="background: #1e3a8a; padding: 2rem; border-radius: 8px; margin: 1.5rem 0; text-align: center; border: 1px solid #3b82f6;">
                 <strong>Ziel-Figur:</strong> ${question.target}
             </div>
 
@@ -122,9 +122,9 @@ function displayQuestion() {
                 <strong>Verfügbare Teile:</strong>
                 <div class="figure-pieces" style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 1rem; margin-top: 1rem;">
                     ${question.pieces.map(piece => `
-                        <div style="padding: 1.5rem; background: white; border: 2px solid #e5e7eb; border-radius: 8px; text-align: center;">
+                        <div style="padding: 1.5rem; background: #1e293b; border: 2px solid #334155; border-radius: 8px; text-align: center;">
                             <div style="font-size: 2rem; margin-bottom: 0.5rem;">${piece.shape}</div>
-                            <div style="font-weight: 600; color: #2563eb;">${piece.id}</div>
+                            <div style="font-weight: 600; color: #3b82f6;">${piece.id}</div>
                         </div>
                     `).join('')}
                 </div>
@@ -141,7 +141,7 @@ function displayQuestion() {
                     </div>
                 `).join('')}
             </div>
-            <div id="explanation" style="margin-top: 1.5rem; padding: 1rem; background: #eff6ff; border-radius: 8px; display: none;">
+            <div id="explanation" style="margin-top: 1.5rem; padding: 1rem; background: #1e3a8a; border: 1px solid #3b82f6; border-radius: 8px; display: none; color: #e5e7eb;">
                 <strong>Erklärung:</strong> <span id="explanation-text"></span>
             </div>
         </div>
@@ -215,7 +215,7 @@ function showResults() {
             <h2>Ergebnis</h2>
             <div class="score">${score} / ${questions.length}</div>
             <p style="font-size: 1.3rem;">${percentage}% richtig</p>
-            <button class="btn btn-primary" onclick="location.reload()" style="margin-top: 1.5rem; background: white; color: #10b981;">
+            <button class="btn btn-primary" onclick="location.reload()" style="margin-top: 1.5rem; background: #3b82f6; color: #ffffff;">
                 Nochmal üben
             </button>
             <a href="index.html" class="btn btn-secondary" style="margin-top: 1rem; display: inline-block; text-decoration: none;">
