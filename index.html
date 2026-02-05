@@ -1,12 +1,133 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>wassup dog</title>
+    <title>OpenMEDAT - Dein MEDAT Trainingsportal</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>coole open source med breaker seite YEAH</h1>
-    <img src="istockphoto-1473559425-612x612.jpg" alt="cooler typ">
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <div class="logo">
+                    <h1>OpenMEDAT</h1>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="index.html" class="active">Start</a></li>
+                    <li><a href="#about">Über uns</a></li>
+                    <li><a href="#features">Features</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h1>Bereite dich optimal auf den MEDAT vor</h1>
+                    <p>Kostenlose, open-source Plattform zum Trainieren aller relevanten MEDAT-Aufgabentypen</p>
+                    <a href="#categories" class="cta-button">Jetzt starten</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Categories Section -->
+        <section id="categories" class="categories">
+            <div class="container">
+                <h2>Wähle deine Übungskategorie</h2>
+                <div class="category-grid">
+                    <a href="zahlenfolgen.html" class="category-card">
+                        <div class="card-icon">🔢</div>
+                        <h3>Zahlenfolgen</h3>
+                        <p>Trainiere dein logisches Denken mit Zahlenreihen und Sequenzen</p>
+                        <span class="card-arrow">→</span>
+                    </a>
+
+                    <a href="figuren.html" class="category-card">
+                        <div class="card-icon">🧩</div>
+                        <h3>Figuren zusammensetzen</h3>
+                        <p>Verbessere dein räumliches Vorstellungsvermögen</p>
+                        <span class="card-arrow">→</span>
+                    </a>
+
+                    <a href="gedaechtnis.html" class="category-card">
+                        <div class="card-icon">🧠</div>
+                        <h3>Gedächtnis & Merkfähigkeit</h3>
+                        <p>Trainiere deine Merkfähigkeit für Fakten und Details</p>
+                        <span class="card-arrow">→</span>
+                    </a>
+
+                    <a href="wortfluessigkeit.html" class="category-card">
+                        <div class="card-icon">📝</div>
+                        <h3>Wortflüssigkeit</h3>
+                        <p>Übe Wortassoziationen und Sprachverständnis</p>
+                        <span class="card-arrow">→</span>
+                    </a>
+
+                    <a href="textverstaendnis.html" class="category-card">
+                        <div class="card-icon">📖</div>
+                        <h3>Textverständnis</h3>
+                        <p>Verbessere dein Leseverständnis und analytisches Denken</p>
+                        <span class="card-arrow">→</span>
+                    </a>
+
+                    <a href="implikationen.html" class="category-card">
+                        <div class="card-icon">🔍</div>
+                        <h3>Implikationen erkennen</h3>
+                        <p>Trainiere logisches Schließen und Schlussfolgerungen</p>
+                        <span class="card-arrow">→</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section id="features" class="features">
+            <div class="container">
+                <h2>Warum OpenMEDAT?</h2>
+                <div class="features-grid">
+                    <div class="feature-item">
+                        <div class="feature-icon">✅</div>
+                        <h3>100% Kostenlos</h3>
+                        <p>Alle Übungen sind komplett kostenlos verfügbar</p>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon">🌐</div>
+                        <h3>Open Source</h3>
+                        <p>Gemeinschaftlich entwickelt und transparent</p>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon">📊</div>
+                        <h3>Fortschrittstracking</h3>
+                        <p>Verfolge deine Leistung und Entwicklung</p>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon">⚡</div>
+                        <h3>Sofortiges Feedback</h3>
+                        <p>Erhalte direkte Rückmeldung zu deinen Antworten</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about">
+            <div class="container">
+                <h2>Über OpenMEDAT</h2>
+                <p>OpenMEDAT ist eine kostenlose, open-source Plattform zur Vorbereitung auf den Medizinischen Aufnahmetest in Österreich. Wir glauben, dass Bildung für alle zugänglich sein sollte.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 OpenMEDAT - Open Source MEDAT Vorbereitung</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>

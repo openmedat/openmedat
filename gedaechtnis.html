@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gedächtnis & Merkfähigkeit - OpenMEDAT</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <div class="logo">
+                    <h1>OpenMEDAT</h1>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="index.html">Start</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <section class="exercise-header">
+        <div class="container">
+            <h1>Gedächtnis & Merkfähigkeit</h1>
+            <p>Merke dir Informationen und beantworte Fragen dazu</p>
+        </div>
+    </section>
+
+    <div class="exercise-container">
+        <div id="memorize-phase" style="display: block;">
+            <div class="question-card">
+                <h2 style="margin-bottom: 1.5rem;">Phase 1: Merken</h2>
+                <div id="memory-content"></div>
+                <div style="text-align: center; margin-top: 2rem;">
+                    <div id="timer" style="font-size: 2rem; color: #2563eb; font-weight: bold; margin-bottom: 1rem;">60</div>
+                    <button class="btn btn-primary" id="start-btn">Lernzeit starten (60 Sekunden)</button>
+                    <button class="btn btn-secondary" id="continue-btn" style="display: none;">Weiter zu den Fragen</button>
+                </div>
+            </div>
+        </div>
+
+        <div id="question-phase" style="display: none;">
+            <div id="question-container"></div>
+            <div class="button-group">
+                <button class="btn btn-primary" id="check-btn">Antwort überprüfen</button>
+                <button class="btn btn-secondary" id="next-btn" style="display: none;">Nächste Frage</button>
+            </div>
+        </div>
+
+        <div id="results" style="display: none;"></div>
+    </div>
+
+    <a href="index.html" class="back-link">← Zurück zur Startseite</a>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 OpenMEDAT - Open Source MEDAT Vorbereitung</p>
+        </div>
+    </footer>
+
+    <script src="gedaechtnis.js"></script>
+</body>
+</html>
